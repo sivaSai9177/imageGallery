@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loader">
+        <div class="loading">
+        </div>
+        <p>loading . . .</p>
+    </div>
+        <div class="card">
+            <i class="material-icons closeBtn">close</i>
+                <div class="photo"><img src="" alt="eagle"></div>
+                <div class="text">
+                    <div class="sub-text-1">
+                        <h4>Say thanks</h4>
+                        <div class="icons">
+                                <i class="material-icons">face</i>
+                                <i class="material-icons">share</i>
+                        </div>
+                    </div>
+                    <div class="sub-text-2">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque nulla fugiat laboriosam totam, voluptates quae!</p>
+                    </div>
+                    <div class="text-link">
+                        <p>developed by <a href="#" class="link">S Siva Sai</a> on <a href="#" class="link">VsCode</a></p>
+                        <a href="#" class="copy">Copy</a>
+                    </div>
+                </div>
+        </div>
+        <header>
+            <div class="wrapper">
+                <div class="left">
+                    <div class="logo">
+                        <i class="material-icons">camera</i>
+                    </div>
+                    <div class="search">
+                        <input type="text" name="search" id="search" autocomplete="off" placeholder="search">
+                        <i class="material-icons search-icon">search</i>
+                        <span class="real-placeholder">Try: Beard</span>
+                    </div>
+                </div>
+                <ul class="right">
+                    <li class="home-link active"><i class="material-icons li-icons">home</i><span>Home</span></li>
+                    <li class="links link-1"><i class="material-icons li-icons">people</i>
+                        <span class="span">Following
+                        <div class="li-card pop1">
+                            <div class="icon">
+                                <i class="material-icons">mood_bad</i>
+                            </div>
+                            <p>Oops It seems you are not following any one!<br> Press Home</p>
+                        </div>
+                    </span></li>
+                    <li class="links link-2"><i class="material-icons li-icons">notifications</i>
+                        <span class="span">Notifications
+                        <div class="li-card pop2">
+                            <div class="icon">
+                                <i class="material-icons">notifications_none</i>
+                            </div>
+                            <p>Oops you don’t have any notifications! <br> Press Home</p>
+                        </div>
+                    </span></li>
+                    <li class="links link-3"><i class="material-icons li-icons">account_circle</i>
+                        <span class="span">Siva Sai
+                        <div class="li-card pop3">
+                            <div class="icon">
+                                <i class="material-icons">error</i>
+                            </div>
+                            <p>Oops I am only user for now! <br> Press Home</p>
+                        </div>
+                    </span></li>
+                </ul>
+            </div>
+        </header>
+<div class="overlay"></div>
+ <div class="container">
+
+    <div class="container-li-card card-1">
+        <div class="icon">
+            <i class="material-icons">mood_bad</i>
+        </div>
+        <p>Oops It seems you are not following any one!<br> Press Home</p>
+    </div>
+    <div class="container-li-card card-2">
+        <div class="icon">
+            <i class="material-icons">notifications_none</i>
+        </div>
+        <p>Oops you don’t have any notifications! <br> Press Home</p>
+    </div>
+     <div class="container-li-card card-3">
+         <div class="icon">
+             <i class="material-icons">error</i>
+         </div>
+         <p>Oops I am only user for now! <br> Press Home</p>
+     </div>
+    <div class="container-wrapper">
+        <div class="one home">
+        </div>
+        <div class="two home">
+        </div>
+        <div class="three home">
+        </div>
+        <div class="four home"></div>
+        </div>
+    </div>
+</div>
+<script src="script.js" defer></script>
+</body>
+</html>
