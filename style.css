@@ -68,7 +68,7 @@ body{
     border-radius: 15px;
     border: 1px solid black;
     border-right: none;
-    animation:  imgLoading forwards 250ms linear;
+    animation:  imgLoading infinite 250ms linear;
 }
 @keyframes imgLoading{
     to{
