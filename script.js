@@ -109,7 +109,7 @@ closeBtn.addEventListener('click', () => {
 firstImages.forEach(image => {
     var leftHtml = `
     <div class="port-image home">
-        <img src="images/left/image-${image}.jpg" alt="eagle">
+        <img loading="lazy" src="images/left/image-${image}.jpg" alt="eagle">
         <div class="port-content">
             <h1>superb view</h1>
             <a download = "" href = "#"> <i class = "material-icons">arrow_downward </i></a>
@@ -120,7 +120,7 @@ firstImages.forEach(image => {
 secondImages.forEach(image => {
     var centerHtml = `
     <div class="port-image home">
-        <img src="images/center/image-${image}.jpg" alt="eagle">
+        <img loading="lazy" src="images/center/image-${image}.jpg" alt="eagle">
         <div class="port-content">
             <h1>superb view</h1>
             <a download = "" href = "#"> <i class = "material-icons"> arrow_downward </i></a>
@@ -131,7 +131,7 @@ secondImages.forEach(image => {
 thirdImages.forEach(image => {
     var rightHtml = `
     <div class="port-image home">
-        <img src="images/right/image-${image}.jpg" alt="eagle">
+        <img loading="lazy"  src="images/right/image-${image}.jpg" alt="eagle">
         <div class="port-content">
             <h1>superb view</h1>
             <a download="" href="#"><i class="material-icons">arrow_downward</i></a>
@@ -142,7 +142,7 @@ thirdImages.forEach(image => {
 fourthImages.forEach(image => {
     var rightHtml = `
     <div class="port-image home">
-        <img src="images/fourth/image-${image}.jpg" alt="eagle">
+        <img loading="lazy" src="images/fourth/image-${image}.jpg" alt="eagle">
         <div class="port-content">
             <h1>superb view</h1>
             <a download="" href="#"><i class="material-icons">arrow_downward</i></a>
@@ -164,6 +164,7 @@ portContent.forEach(item => {
             var img = e.target.parentElement.parentElement.previousElementSibling;
             var imgSrc = img.getAttribute('src');
             shiftImage.setAttribute('src', imgSrc);
+            shiftImage.setAttribute('loading', 'lazy');
             card.classList.add('showCard');
             download('images', a, imgSrc);
         }
