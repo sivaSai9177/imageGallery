@@ -63,7 +63,7 @@ window.addEventListener('load', () => {
     document.body.style.overflowY = "auto";
     mainContainer.style.display = "flex";
 
-    function query790() {
+    {function query790() {
         var query790 = window.matchMedia("(max-width: 790px)");
         var Card1 = document.querySelector(".card-1");
         var Card2 = document.querySelector(".card-2");
@@ -88,8 +88,7 @@ window.addEventListener('load', () => {
                 Card3.classList.add("li-active");
             });
         }
-    };
-    query790();
+    };}
 
 
 
@@ -101,6 +100,13 @@ function showElements(Html, container) {
     div.classList.add('port-items');
     div.innerHTML = Html;
     container.appendChild(div);
+    var images = div.querySelectorAll('div img');
+    images.forEach(img =>{
+        img.addEventListener('load',()=>{
+            img.previousElementSibling.remove();
+            img.nextElementSibling.style.display = 'flex';
+        })
+    })
 }
 closeBtn.addEventListener('click', () => {
     card.classList.remove('showCard');
@@ -109,6 +115,7 @@ closeBtn.addEventListener('click', () => {
 firstImages.forEach(image => {
     var leftHtml = `
     <div class="port-image home">
+        <div class = "image-loading"></div>
         <img loading="lazy" src="images/left/image-${image}.jpg" alt="eagle">
         <div class="port-content">
             <h1>superb view</h1>
@@ -120,6 +127,7 @@ firstImages.forEach(image => {
 secondImages.forEach(image => {
     var centerHtml = `
     <div class="port-image home">
+        <div class = "image-loading"></div>
         <img loading="lazy" src="images/center/image-${image}.jpg" alt="eagle">
         <div class="port-content">
             <h1>superb view</h1>
@@ -131,6 +139,7 @@ secondImages.forEach(image => {
 thirdImages.forEach(image => {
     var rightHtml = `
     <div class="port-image home">
+        <div class = "image-loading"></div>
         <img loading="lazy"  src="images/right/image-${image}.jpg" alt="eagle">
         <div class="port-content">
             <h1>superb view</h1>
@@ -142,6 +151,7 @@ thirdImages.forEach(image => {
 fourthImages.forEach(image => {
     var rightHtml = `
     <div class="port-image home">
+        <div class = "image-loading"></div>
         <img loading="lazy" src="images/fourth/image-${image}.jpg" alt="eagle">
         <div class="port-content">
             <h1>superb view</h1>
